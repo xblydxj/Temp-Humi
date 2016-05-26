@@ -26,5 +26,7 @@
         <activity android:name=".charview.CharView"
                 android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth"
          />
+        <activity android:name=".RecordActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth"/>
     </application>
 </manifest>

@@ -63,6 +63,7 @@ public class LoginActivity extends Activity {
                 // 跳转页面
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
+                finish();
             } else {
                 Toast.makeText(this, "用户名或密码错误,请重新登录", Toast.LENGTH_SHORT)
                         .show();

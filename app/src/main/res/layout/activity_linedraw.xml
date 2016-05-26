@@ -8,6 +8,7 @@
     android:id="@+id/lineChar_layout"
 
     >
+
     <LinearLayout
 
         android:id="@+id/axisY"

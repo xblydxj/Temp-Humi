@@ -22,6 +22,7 @@ public class MainActivity extends Activity{
     private static final int MSG_RIGHT = 1;
     private ListView listView;
     private String path = "http://15054375.nat123.net:26169/";
+//    private String path = "http://10.0.3.2/";
     private ArrayList<Data> datas = null;
 
 
@@ -62,7 +63,7 @@ public class MainActivity extends Activity{
             public void run(){
                 try {
                     dataUtils = new DataUtils();
-                    Message msg = dataUtils.getData(path);
+                    Message msg = dataUtils.getData(path,MainActivity.this);
                     handler.sendMessage(msg);
                 }catch (Exception e){
                     Message msg = Message.obtain();
@@ -104,10 +105,18 @@ public class MainActivity extends Activity{
         }
     }
 
+
+
     public void charView(View view){
         Intent intent = new Intent(this, CharView.class);
         intent.putExtra("AirTemperatureData", AirData2Integer());
         intent.putExtra("SoilTemperatureData", SoilData2Integer());
+        startActivity(intent);
+    }
+
+
+    public void record(View view){
+        Intent intent = new Intent(this, RecordActivity.class);
         startActivity(intent);
     }
 }

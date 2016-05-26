@@ -58,6 +58,7 @@ public class Signin extends Activity{
                 //跳转到主界面
                 Intent intent = new Intent(this, LoginActivity.class);
                 startActivity(intent);
+                finish();
             }
         }
 

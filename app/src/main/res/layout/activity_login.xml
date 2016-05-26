@@ -95,11 +95,6 @@
 
         </LinearLayout>
     </ScrollView>
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="40dp"></RelativeLayout>
 
     <TextView
         android:layout_width="wrap_content"

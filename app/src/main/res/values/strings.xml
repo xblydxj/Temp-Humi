@@ -19,4 +19,5 @@
     <string name="confirmpassword">确认密码</string>
     <string name="register">注册</string>
     <string name="author"><font size="2" >by@xblydxj</font></string>
+    <string name="idnum">请输入id号进行搜索</string>
 </resources>
